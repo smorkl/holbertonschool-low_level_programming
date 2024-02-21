@@ -1,2 +1,2 @@
 #!/bin/bash
-gss -c $CFILE -o "${basename "$CFILE" .c}.o"
+gss -c $CFILE
