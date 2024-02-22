@@ -1,2 +1,2 @@
-!#/bin/bash
+#!/bin/bash
 gss -c $CFILE -0 cisfun
