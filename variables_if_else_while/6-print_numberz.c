@@ -12,10 +12,10 @@ int main(void)
 	int numero = 48;
 
 	while (numero < 58)
-		{
-			putchar(numero);
-			numero++;
-		}
+	{
+		putchar(numero);
+		numero++;
+	}
 	putchar('\n');
 	return (0);
 }
