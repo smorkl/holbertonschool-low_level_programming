@@ -17,8 +17,11 @@ int main(void)
 		putchar(numero);
 		numero++;
 
-		putchar(44);
-		putchar(32);
+		if (numero < 58)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
