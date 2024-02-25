@@ -2,7 +2,7 @@
 
 /**
  * main - this code prints all single digit numbers of
- *        base 10 starting from 0, followed by a new line.
+ *        base 10 starting from 0 and from a to f, followed by a new line.
  *
  * Return: Always 0.
  */
