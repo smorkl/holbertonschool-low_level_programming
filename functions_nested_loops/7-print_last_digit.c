@@ -9,25 +9,26 @@
 
 int print_last_digit(int num)
 {
-	if (num == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else if (num < 0)
-	{
-		int num_ultime;
+	int num_ultime = num % 10;
 
-		num_ultime = -(num % 10);
-		_putchar(num_ultime);
-		return (num_ultime);
-	}
-	else
+	if (num < 0 )
 	{
-		int num_ultime;
-
-		num_ultime = num % 10;
-		_putchar(num_ultime);
-		return (num_ultime);
+		num_ultime *= -1;
 	}
+
+	_putchar(num_ultime + '0');
+
+	return (num_ultime);
+}
+
+int main(void)
+{
+	int r;
+
+	print_last_digit(98);
+	print_last_digit(0);
+	r = print_last_digit(-1024);
+	_putchar('0' + r);
+	_putchar('\n');
+	return (0);
 }
