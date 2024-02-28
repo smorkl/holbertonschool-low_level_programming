@@ -17,16 +17,17 @@ int print_last_digit(int num)
 	else if (num < 0)
 	{
 		int num_ultime;
-		num_ultime =-(num % 10);
+
+		num_ultime = -(num % 10);
 		_putchar(num_ultime);
-		return num_iltime;
+		return (num_ultime);
 	}
 	else
 	{
 		int num_ultime;
 
-		num_ultime =num % 10;
+		num_ultime = num % 10;
 		_putchar(num_ultime);
-		return num_ultime;
+		return (num_ultime);
 	}
 }
