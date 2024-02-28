@@ -9,15 +9,25 @@
 
 int print_last_digit(int num)
 {
-	int num_ultime;
-
-	if ((num > 0) || (num < 0) )
+	if (num == 0)
 	{
-		num_ultime = num % 10;
+		_putchar ('0');
+		return (0);
+	}
+	else if (num < 0)
+	{
+		int num_ultime;
+
+		num_ultime = -(num % 10);
+		_putchar (num_ultime);
 		return num_ultime;
 	}
 	else
 	{
-		return (0);
+		int num_ultime;
+
+		num_ultime = num % 10;
+		_putchar (num_ultime);
+		return num_ultime;
 	}
 }
