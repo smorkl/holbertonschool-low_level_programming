@@ -11,23 +11,22 @@ int print_last_digit(int num)
 {
 	if (num == 0)
 	{
-		_putchar ('0');
+		putchar('0');
 		return (0);
 	}
 	else if (num < 0)
 	{
 		int num_ultime;
-
-		num_ultime = -(num % 10);
-		_putchar (num_ultime);
-		return num_ultime;
+		num_ultime =-(num % 10);
+		putchar(num_ultime);
+		return last_digit;
 	}
 	else
 	{
 		int num_ultime;
 
-		num_ultime = num % 10;
-		_putchar (num_ultime);
-		return num_ultime;
+		num_ultime =num % 10;
+		putchar(num_ultime);
+		return last_digit;
 	}
 }
