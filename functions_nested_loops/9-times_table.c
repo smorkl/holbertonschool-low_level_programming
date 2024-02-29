@@ -26,7 +26,7 @@ void times_table(void)
 				_putchar(' ');
 				numero_factor++;
 			}
-			else if (numero_multiplicador < 9)
+			else if (numero_multiplicador == 9)
 			{
 				int segundo;
 				int primero;
