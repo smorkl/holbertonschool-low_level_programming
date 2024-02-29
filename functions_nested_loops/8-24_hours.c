@@ -13,14 +13,23 @@ void jack_bauer(void)
 
 	while (hora < 24)
 	{
-		_putchar('0' + hora / 10);
-		_putchar('0' + hora % 10);
-		_putchar(':');
-		_putchar('0' + minuto / 10);
-		_putchar('0' + minuto % 10);
-		_putchar('\n');
-		minuto++;
+		while (minuto < 60)
+		{
+			_putchar('0' + hora / 10);
+			_putchar('0' + hora % 10);
+			_putchar(':');
+			_putchar('0' + minuto / 10);
+			_putchar('0' + minuto % 10);
+			_putchar('\n');
+			minuto++;
+		}
+		minuto = 0;
+		hora++;
 	}
-	minuto = 0;
-	hora++;
+}
+
+int main(void)
+{
+	jack_bauer();
+	return (0);
 }
