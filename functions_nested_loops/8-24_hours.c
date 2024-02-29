@@ -27,9 +27,3 @@ void jack_bauer(void)
 		hora++;
 	}
 }
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
