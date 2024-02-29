@@ -19,9 +19,9 @@ void times_table(void)
 
 			if (resultado < 10)
 			{
+				_putchar(' ');
 				_putchar('0' + resultado);
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 				numero_factor++;
 			}
