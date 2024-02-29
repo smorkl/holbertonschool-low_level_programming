@@ -28,6 +28,9 @@ void times_table(void)
 			}
 			else if (numero_multiplicador < 9)
 			{
+				int segundo;
+				int primero;
+
 				primero = resultado / 10;
 				_putchar('0' + primero);
 				segundo = resultado % 10;
