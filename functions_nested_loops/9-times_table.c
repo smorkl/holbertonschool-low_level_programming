@@ -11,9 +11,9 @@ void times_table(void)
 	int numero_multiplicador = 0;
 	int numero_factor = 0;
 
-	while (numero_multiplicador < 10)
+	while (numero_multiplicador < 9)
 	{
-		if (numero_factor < 10)
+		if (numero_factor < 11)
 		{
 			int resultado = numero_multiplicador * numero_factor;
 
