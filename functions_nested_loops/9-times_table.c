@@ -11,7 +11,7 @@ void times_table(void)
 	int numero_multiplicador = 0;
 	int numero_factor = 0;
 
-	while (numero_multiplicador < 9)
+	while (numero_multiplicador < 10)
 	{
 		if (numero_factor < 11)
 		{
@@ -21,6 +21,7 @@ void times_table(void)
 			{
 				_putchar('0' + resultado);
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 				numero_factor++;
@@ -38,7 +39,7 @@ void times_table(void)
 				_putchar(' ');
 				numero_factor++;
 			}
-			if (numero_factor == 11)
+			if (numero_factor == 10)
 			{
 				numero_factor = 0;
 				_putchar('\n');
