@@ -19,11 +19,19 @@ void times_table(void)
 
 			if (resultado < 10)
 			{
+				if (resultado )
 				_putchar(' ');
 				_putchar('0' + resultado);
 				_putchar(',');
 				_putchar(' ');
 				numero_factor++;
+			}
+			else if (numero_multiplicador < 9)
+			{
+				primero = resultado / 10;
+				_putchar('0' + primero);
+				segundo = resultado % 10;
+				_putchar('0' + segundo);
 			}
 			else
 			{
