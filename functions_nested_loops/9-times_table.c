@@ -22,6 +22,7 @@ void times_table(void)
 				_putchar('0' + resultado);
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 				numero_factor++;
 			}
 			else
