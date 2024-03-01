@@ -9,7 +9,7 @@
 
 void print_to_98(int n)
 {
-	if (n <= 97)
+	if (n <= 99)
 	{
 		printf("%d, ", n);
 
@@ -22,7 +22,7 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	else
+	else (n != 98)
 	{
 		printf("%d, ", n);
 
