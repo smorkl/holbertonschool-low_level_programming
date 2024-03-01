@@ -25,9 +25,9 @@ void more_numbers(void)
 			int primero;
 			int segundo;
 
-			primero = resultado / 10;
+			primero = numero / 10;
 			_putchar('0' + primero);
-			segundo = resultado % 10;
+			segundo = numero % 10;
 			_putchar('0' + segundo);
 			numero++;
 		}
