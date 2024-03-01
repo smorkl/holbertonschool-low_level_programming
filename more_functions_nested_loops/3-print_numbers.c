@@ -11,7 +11,8 @@ void print_numbers(void)
 
 	while (numero < 10)
 	{
-		_putchar("0" + numero);
+		_putchar('0' + numero);
 		numero++;
 	}
+	_putchar('\n');
 }
