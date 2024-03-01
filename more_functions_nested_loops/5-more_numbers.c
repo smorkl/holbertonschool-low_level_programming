@@ -31,7 +31,6 @@ void more_numbers(void)
 			_putchar('0' + segundo);
 			numero++;
 		}
-		_putchar('\n');
 		repetidor++;
 	}
 }
