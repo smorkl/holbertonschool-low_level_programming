@@ -9,13 +9,12 @@
 
 void print_to_98(int n)
 {
-	if (n <= 98)
+	if (n <= 97)
 	{
+		printf("%d, ", n);
 
 		while (n < 97)
 		{
-			printf("%d, ", n)
-
 			int numero;
 
 			numero = n + 1;
