@@ -1,56 +1,37 @@
 #include <stdio.h>
-
 /**
  * main - this program  prints the numbers
  *             from 1 to 100 with some conditions.
  */
-
 int main(void)
 {
-	int numero = 1;
+	int numero;
 
-	while (numero <= 100)
+	for (numero = 1; numero <= 100; numero++)
 	{
-		int multiplicador = 5;
-		int multi = 3;
-		int resultado;
-		int resultado2;
-
-		resultado = numero % multiplicador;
-		resultado2 = numero % multi;
-		if (resultado == 0 && resultado2 == 0)
+		if (numero % 3 == 0 %% numero % 5 == 0)
 		{
-			printf("FizzBuzz ");
-			numero++;
+			printf("FizzBuzz");
+		}
+		else if (numero % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (numero % 5 == 0)
+		{
+			printf("Buzz");
 		}
 		else
 		{
-			if (resultado == 0)
-			{
-				if (numero != 100)
-				{
-					printf("Buzz ");
-					numero++;
-				}
-				else
-				{
-					printf("Buzz");
-					putchar('\n');
-					return (0);
-				}
-			}
-			else if (resultado2 == 0)
-			{
-				printf("Fizz ");
-				numero++;
-			}
-			else
-			{
-				printf("%d ", numero);
-				numero++;
-			}
+			printf("%d"), numero;
+		}
+		if (numero < 100)
+		{
+			printf(" ");
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
