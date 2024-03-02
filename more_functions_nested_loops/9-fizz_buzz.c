@@ -9,7 +9,7 @@ int main(void)
 {
 	int numero = 1;
 
-	while (numero < 100)
+	while (numero <= 100)
 	{
 		int multiplicador = 5;
 		int multi = 3;
