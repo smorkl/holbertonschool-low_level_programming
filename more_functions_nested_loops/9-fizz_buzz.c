@@ -38,6 +38,7 @@ int main(void)
 			else
 			{
 				printf("%d", numero);
+				numero++;
 			}
 		}
 	}
