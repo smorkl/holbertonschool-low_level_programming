@@ -8,7 +8,7 @@
 
 void print_line(int n)
 {
-	int contador;
+	int contador = 0;
 
 	while (contador <= n && n > 0)
 	{
@@ -16,4 +16,12 @@ void print_line(int n)
 		contador++;
 	}
 	_putchar('\n');
+}
+int main(void)
+{
+	print_line(0);
+	print_line(2);
+	print_line(10);
+	print_line(-4);
+	return (0);
 }
