@@ -35,6 +35,8 @@ int main(void)
 				else
 				{
 					printf("Buzz");
+					putchar('\n');
+					return (0);
 				}
 			}
 			else if (resultado2 == 0)
