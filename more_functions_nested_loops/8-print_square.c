@@ -10,6 +10,12 @@ void print_square(int size)
 {
 	int contador1 = 0;
 
+	if (size <= 0)
+	{
+		_Putchar('\n');
+		return;
+	}
+
 	while (contador1 < size && size > 0)
 	{
 		int contador2;
@@ -21,5 +27,4 @@ void print_square(int size)
 		contador1++;
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
