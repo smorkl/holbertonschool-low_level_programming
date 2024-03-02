@@ -12,7 +12,7 @@ void print_diagonal(int n)
 	{
 		int contador = 0;
 
-		while (contador < n-1 && n != 1)
+		while (contador < n-1)
 		{
 			_putchar(' ');
 			contador++;
