@@ -27,8 +27,15 @@ int main(void)
 		{
 			if (resultado == 0)
 			{
-				printf("Buzz ");
-				numero++;
+				if (numero != 100)
+				{
+					printf("Buzz ");
+					numero++;
+				}
+				else
+				{
+					printf("Buzz");
+				}
 			}
 			else if (resultado2 == 0)
 			{
