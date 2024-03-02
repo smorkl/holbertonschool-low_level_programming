@@ -21,5 +21,5 @@ void print_square(int size)
 		contador1++;
 		_putchar('\n');
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
