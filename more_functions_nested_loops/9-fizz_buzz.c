@@ -2,6 +2,8 @@
 /**
  * main - this program  prints the numbers
  *             from 1 to 100 with some conditions.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
