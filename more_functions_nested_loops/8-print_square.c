@@ -12,7 +12,7 @@ void print_square(int size)
 
 	while (contador1 < size)
 	{
-		for(int contador2 = 0; contador2 < n; contador2++)
+		for (int contador2 = 0; contador2 < n; contador2++)
 		{
 			_putchar('#');
 		}
