@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_line - This function prints the character in quantity \.
@@ -17,7 +17,7 @@ void print_diagonal(int n)
 			_putchar(' ');
 			contador++;
 		}
-		if (contador = n)
+		if (contador == n)
 		{
 			_putchar('\\');
 			_putchar('\n');
