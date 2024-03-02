@@ -20,24 +20,24 @@ int main(void)
 		resultado2 = numero % multi;
 		if (resultado == 0 && resultado2 == 0)
 		{
-			printf(" FizzBuzz");
+			printf("FizzBuzz ");
 			numero++;
 		}
 		else
 		{
 			if (resultado == 0)
 			{
-				printf(" Buzz");
+				printf("Buzz ");
 				numero++;
 			}
 			else if (resultado2 == 0)
 			{
-				printf(" fizz");
+				printf("fizz ");
 				numero++;
 			}
 			else
 			{
-				printf(" %d", numero);
+				printf("%d ", numero);
 				numero++;
 			}
 		}
