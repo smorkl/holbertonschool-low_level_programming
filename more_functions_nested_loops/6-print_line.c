@@ -8,19 +8,12 @@
 
 void print_line(int n)
 {
-  if (n > 0)
-  {
-	  int contador;
+	int contador;
 
-	  while (contador < n)
-	  {
-		  _putchar('_');
-		  contador++;
-	  }
-	  _putchar('\n');
-  }
-  else
-  {
-	  _putchar('\n');
-  }
+	while (contador <= n && n > 0)
+	{
+		_putchar('_');
+		contador++;
+	}
+	_putchar('\n');
 }
