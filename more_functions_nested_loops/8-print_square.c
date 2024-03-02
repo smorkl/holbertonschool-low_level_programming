@@ -12,7 +12,7 @@ void print_square(int size)
 
 	if (size <= 0)
 	{
-		_Putchar('\n');
+		_putchar('\n');
 		return;
 	}
 
