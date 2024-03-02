@@ -41,7 +41,7 @@ int main(void)
 			}
 			else if (resultado2 == 0)
 			{
-				printf("fizz ");
+				printf("Fizz ");
 				numero++;
 			}
 			else
