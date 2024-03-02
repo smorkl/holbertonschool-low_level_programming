@@ -9,7 +9,7 @@ int main(void)
 
 	for (numero = 1; numero <= 100; numero++)
 	{
-		if (numero % 3 == 0 %% numero % 5 == 0)
+		if (numero % 3 == 0 && numero % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -23,7 +23,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d"), numero;
+			printf("%d", numero);
 		}
 		if (numero < 100)
 		{
