@@ -9,28 +9,19 @@
 
 void more_numbers(void)
 {
-	int repetidor = 0;
+	int numero = 0;
+	int primero;
+	int segundo;
 
-	while (repetidor < 11)
+	for (numero = 0; numero <= 14; numeor++)
 	{
-		int numero = 0;
-
-		if (numero < 10)
+		if (numero > 9)
 		{
-			_putchar('0' + numero);
-			numero++;
-		}
-		else
-		{
-			int primero;
-			int segundo;
-
 			primero = numero / 10;
 			_putchar('0' + primero);
-			segundo = numero % 10;
-			_putchar('0' + segundo);
-			numero++;
 		}
-		repetidor++;
+		segundo = numero % 10;
+		_putchar('0' + segundo);
 	}
+	_putchar('\n');
 }
