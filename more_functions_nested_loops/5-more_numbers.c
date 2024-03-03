@@ -26,7 +26,7 @@ void more_numbers(void)
 			segundo = numero % 10;
 			_putchar('0' + segundo);
 		}
-	}
 	repetir++;
 	_putchar('\n');
+	}
 }
