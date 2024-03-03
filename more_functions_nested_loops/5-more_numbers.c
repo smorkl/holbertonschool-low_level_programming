@@ -12,16 +12,21 @@ void more_numbers(void)
 	int numero = 0;
 	int primero;
 	int segundo;
+	int repetir;
 
-	for (numero = 0; numero <= 14; numeor++)
+	while (repetir <= 14)
 	{
-		if (numero > 9)
+		for (numero = 0; numero <= 14; numero++)
 		{
-			primero = numero / 10;
-			_putchar('0' + primero);
+			if (numero > 9)
+			{
+				primero = numero / 10;
+				_putchar('0' + primero);
+			}
+			segundo = numero % 10;
+			_putchar('0' + segundo);
 		}
-		segundo = numero % 10;
-		_putchar('0' + segundo);
 	}
+	repetir++;
 	_putchar('\n');
 }
