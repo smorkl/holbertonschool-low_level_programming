@@ -33,12 +33,3 @@ void print_triangle(int size)
 		_putchar('\n');
 	}
 }
-
-int main(void)
-{
-	print_triangle(0);
-	print_triangle(0);
-	print_triangle(5);
-	print_triangle(0);
-	return (0);
-}
