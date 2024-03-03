@@ -14,7 +14,7 @@ void more_numbers(void)
 	int segundo;
 	int repetir = 0;
 
-	while (repetir <= 14)
+	while (repetir <= 10)
 	{
 		for (numero = 0; numero <= 14; numero++)
 		{
