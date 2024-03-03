@@ -12,12 +12,14 @@ void reset_to_98(int *n)
 	int primero;
 	int segundo;
 
-	n = &p;
+	*n = &p;
 
-	primero = n / 10;
+	primero = *n / 10;
 	_putchar('0' + primero);
-	segundo = n % 10;
+	segundo = *n % 10;
 	_putchar('0' + segundo);
 
-	_putchar('\n')
+	_putchar('\n');
+
+	return (0);
 }
