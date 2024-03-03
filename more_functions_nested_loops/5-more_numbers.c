@@ -12,7 +12,7 @@ void more_numbers(void)
 	int numero = 0;
 	int primero;
 	int segundo;
-	int repetir;
+	int repetir = 0;
 
 	while (repetir <= 14)
 	{
