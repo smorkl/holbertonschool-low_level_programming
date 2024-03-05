@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _Puts - the funcion print the string of chars.
+ * _puts - the funcion print the string of chars.
  * @str: matriz of chars.
  *
  */
