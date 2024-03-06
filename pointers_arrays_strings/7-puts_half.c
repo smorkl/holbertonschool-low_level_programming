@@ -21,7 +21,14 @@ void puts_half(char *str)
 
 	longitud_de_la_cadena = contador - 1;
 
-	if ((longitud_de_la_cadena % 2) < 0)
+	if ((longitud_de_la_cadena % 2) != 0)
+	{
+		for (i = 0; i < (contador / 2); i++)
+		{
+			_putchar(str[longitud_de_la_cadena / 2 + i]);
+		}
+	}
+	else
 	{
 		for (i = 0; i <= (longitud_de_la_cadena / 2); i++)
 		{
@@ -29,11 +36,6 @@ void puts_half(char *str)
 		}
 	}
 	else
-	{
-		for (i = 0; i < (contador / 2); i++)
-		{
-			_putchar(str[((longitud_de_la_cadena + 1) / 2) + i]);
-		}
-	}
+
 	_putchar('\n');
 }
