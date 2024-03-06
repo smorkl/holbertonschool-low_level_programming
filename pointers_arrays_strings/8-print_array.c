@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - the fuction print the number followed by a comma
@@ -14,12 +15,12 @@ void print_array(int *a, int n)
 	{
 		if (contador < (n - 1))
 		{
-			printf("%d, " a[contador]);
+			printf("%d, ", a[contador]);
 			contador++;
 		}
 		else
 		{
-			printf("%d" a[contador]);
+			printf("%d", a[contador]);
 			contador++;
 		}
 	}
