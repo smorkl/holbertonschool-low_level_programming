@@ -19,7 +19,7 @@ void puts2(char *str)
 
 	resultado = cantidad - 1;
 
-	for (i = 0; i < resultado; i += 2)
+	for (i = 0; i <= resultado; i += 2)
 	{
 		_putchar(str[i]);
 	}
