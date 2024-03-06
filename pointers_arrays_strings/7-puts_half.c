@@ -25,7 +25,7 @@ void puts_half(char *str)
 	{
 		for (i = 0; i < (contador / 2); i++)
 		{
-			_putchar(str[(longitud_de_la_cadena - 1) / 2 + i]);
+			_putchar(str[(longitud_de_la_cadena + 1) / 2 + i]);
 		}
 	}
 	else
