@@ -19,18 +19,18 @@ void puts_half(char *str)
 		contador++;
 	}
 
-	longitud_de_la_cadena = contador - 1;
+	longitud_de_la_cadena = contador;
 
 	if ((longitud_de_la_cadena % 2) != 0)
 	{
-		for (i = 0; i < (contador / 2); i++)
+		for (i = (longitud_de_la_cadena + 1) / 2; i < contador; i++)
 		{
-			_putchar(str[(longitud_de_la_cadena + 1) / 2 + i]);
+			_putchar(str[i]);
 		}
 	}
 	else
 	{
-		for (i = 0; i <= (longitud_de_la_cadena / 2); i++)
+		for (i = longitud_de_la_cadena / 2; i < contador; i++)
 		{
 			_putchar(str[i]);
 		}
