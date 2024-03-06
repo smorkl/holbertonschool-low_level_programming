@@ -1,26 +1,28 @@
 #include "main.h"
 
 /**
- * puts2 - the function prints every other character of a string.
- * @str: matriz of number.
+ * rev_string - the function prints every other character of a string.
+ * @s: matriz of char.
  */
 
-void puts2(char *str)
+void rev_string(char *s)
 {
-	int cantidad = 0;
-	int i;
-	int resultado;
+    int cantidad = 0;
+    int i;
+    int resultado;
+    char temp;
 
-	while (str[cantidad] != '\0')
-	{
-		cantidad++;
-	}
+    while (s[cantidad] != '\0')
+    {
+        cantidad++;
+    }
 
-	resultado = cantidad - 1;
+    resultado = cantidad - 1;
 
-	for (i = 0; i < resultado; i += 2)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+    for (i = 0; i < resultado / 2; i++)
+    {
+      temp = *(s + i);
+      s[i] = s[resultado - i];
+      s[resultado - i] = temp;
+    }
 }
