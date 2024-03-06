@@ -8,6 +8,7 @@
 void puts2(char *str)
 {
 	int cantidad = 0;
+	int i;
 	int resultado;
 
 	while (str[cantidad] != '\0')
@@ -16,8 +17,6 @@ void puts2(char *str)
 	}
 
 	resultado = cantidad - 1;
-
-	int i;
 
 	for (i = 0; i < resultado; i += 2)
 	{
