@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * reset_to_98 - return
+ * _strlen - the function print the long of char string
  *
- * @n: the
+ * @s: the
  *
  * Return: the longitud
  */
@@ -17,5 +17,5 @@ int _strlen(char *s)
 		longitud++;
 		s++;
 	}
-	return longitud;
+	return (longitud);
 }
