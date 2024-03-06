@@ -35,4 +35,5 @@ void puts_half(char *str)
 			_putchar(str[((longitud_de_la_cadena + 1) / 2) + i]);
 		}
 	}
+	_putchar('\n')
 }
