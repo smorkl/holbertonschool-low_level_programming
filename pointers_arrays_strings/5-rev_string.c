@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * rev_string - the function prints every other character of a string.
@@ -7,22 +7,22 @@
 
 void rev_string(char *s)
 {
-    int cantidad = 0;
-    int i;
-    int resultado;
-    char temp;
+	int i;
+	int resultado;
+	char temp;
+	int cantidad = 0;
 
-    while (s[cantidad] != '\0')
-    {
-        cantidad++;
-    }
+	while (s[cantidad] != '\0')
+	{
+		cantidad++;
+	}
 
-    resultado = cantidad - 1;
+	resultado = cantidad - 1;
 
-    for (i = 0; i <= resultado / 2; i++)
-    {
-      temp = *(s + i);
-      s[i] = s[resultado - i];
-      s[resultado - i] = temp;
-    }
+	for (i = 0; i <= resultado / 2; i++)
+	{
+		temp = *(s + i);
+		s[i] = s[resultado - i];
+		s[resultado - i] = temp;
+	}
 }
