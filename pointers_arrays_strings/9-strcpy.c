@@ -1,11 +1,13 @@
 #include "main.h"
 
-/*
- * _strcpy - The function moves data from a src pointer to
- *             the dest pointer.
+/**
+ * *_strcpy - The function copies the string pointed to by src, including
+ *            the terminating null byte, to the buffer pointed to by dest.
  *
- * @dest: char void.
- * @src: char char to change.
+ * @dest: pointer to char where the copied string will be stored.
+ * @src: pointer to char from which the string will be copied.
+ *
+ * Return: The pointer to dest.
  */
 
 char *_strcpy(char *dest, char *src)
