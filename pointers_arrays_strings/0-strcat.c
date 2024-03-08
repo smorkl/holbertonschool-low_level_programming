@@ -11,13 +11,12 @@
 char *_strcat(char *dest, char *src)
 {
 	int contador_dest = 0;
+	int contador_src = 0;
 
 	while (dest[contador_dest] != '\0')
 	{
 		contador_dest++;
 	}
-
-	int contador_src = 0;
 
 	while (src[contador_src] != '\0')
 	{
