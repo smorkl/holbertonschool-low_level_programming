@@ -11,30 +11,22 @@
 char *_strcat(char *dest, char *src)
 {
 	int contador_dest = 0;
-	int contador_src = 0;
-	int cantidad_char;
-	char tmp;
-	int i = 0;
-	int contador_dest2;
-
-	while (src[contador_src] != '\0')
-	{
-		contador_src++;
-	}
 
 	while (dest[contador_dest] != '\0')
 	{
 		contador_dest++;
 	}
 
-	cantidad_char = contador_src + contador_dest;
+	int contador_src = 0;
 
-	for (contador_dest2 = contador_dest; contador_dest2 < cantidad_char;
-		 contador_dest2++)
+	while (src[contador_src] != '\0')
 	{
-		tmp = src[i];
-		dest[contador_dest] = tmp;
-		i++;
+		dest[contador_dest] = src[contador_src];
+		contador_dest++;
+		contador_src++;
 	}
+
+	dest[contador_dest] = '\0';
+
 	return (dest);
 }
