@@ -10,8 +10,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int contador__dest = 0;
-	int contador__src = 0;
+	int contador_dest = 0;
+	int contador_src = 0;
 	int cantidad_char;
 	char tmp;
 	int i = 0;
@@ -34,5 +34,5 @@ char *_strcat(char *dest, char *src)
 		dest[contador_dest] = tmp;
 		i++;
 	}
-	return (*dest);
+	return (&dest);
 }
