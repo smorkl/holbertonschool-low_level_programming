@@ -15,6 +15,7 @@ char *_strcat(char *dest, char *src)
 	int cantidad_char;
 	char tmp;
 	int i = 0;
+	int contador_dest2;
 
 	while (src[contador_src] != '\0')
 	{
@@ -28,7 +29,8 @@ char *_strcat(char *dest, char *src)
 
 	cantidad_char = contador_src + contador_dest;
 
-	for (contador_dest; contador_dest < cantidad_char; contador_dest++)
+	for (contador_dest2 = contador_dest; contador_dest2 < cantidad_char;
+		 contador_dest2++)
 	{
 		tmp = src[i];
 		dest[contador_dest] = tmp;
