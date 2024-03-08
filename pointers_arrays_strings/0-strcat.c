@@ -34,5 +34,5 @@ char *_strcat(char *dest, char *src)
 		dest[contador_dest] = tmp;
 		i++;
 	}
-	return (&dest);
+	return (dest);
 }
