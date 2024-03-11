@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int contador_bytes = 0;
 
-	while (contador_bytes <= n && src[contador_bytes] != '\0')
+	while (contador_bytes < n && src[contador_bytes] != '\0')
 	{
 		dest[contador_bytes] = src[contador_bytes];
 		contador_bytes++;
