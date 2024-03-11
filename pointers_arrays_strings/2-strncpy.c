@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int contador_bytes = 0;
 
-	while (contador_bytes <= n)
+	while (contador_bytes <= n &&)
 	{
 		while (src[contador_bytes])
 		{
@@ -19,4 +19,11 @@ char *_strncpy(char *dest, char *src, int n)
 			contador_bytes++;
 		}
 	}
+
+	while (contador_bytes < n)
+	{
+		dest[contador_bytes] = '\0';
+		contador_bytes++;
+	}
+	return (dest);
 }
