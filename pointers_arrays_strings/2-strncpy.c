@@ -11,13 +11,10 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int contador_bytes = 0;
 
-	while (contador_bytes <= n)
+	while (contador_bytes <= n && src[contador_bytes] != '\0')
 	{
-		while (src[contador_bytes])
-		{
-			dest[contador_bytes] = src[contador_bytes];
-			contador_bytes++;
-		}
+		dest[contador_bytes] = src[contador_bytes];
+		contador_bytes++;
 	}
 
 	while (contador_bytes < n)
