@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 	char *deposito;
 	int bytes = 0;
-	int contador;
+	int contador = 0;
 
 	while (str[bytes])
 	{
