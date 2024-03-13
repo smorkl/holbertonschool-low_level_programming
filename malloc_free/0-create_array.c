@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	char *str;
 	unsigned int contador;
 
-	str = (char*)malloc(size * sizeof(char));
+	str = malloc(size * sizeof(char));
 
 	if (str == NULL)
 	{
