@@ -10,7 +10,6 @@ char *str_concat(char *s1, char *s2)
 {
 	int bytes1 = 0;
 	int bytes2 = 0;
-	int total_bytes;
 	char *concatenar;
 	int pasar;
 	int pasar2;
@@ -23,8 +22,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		bytes2++;
 	}
-	total_bytes = bytes1 + bytes2;
-	concatenar = malloc(sizeof(char) + (total_bytes + 1));
+	concatenar = malloc(sizeof(char) + (bytes1 + bytes2 + 1));
 	if (concatenar == NULL)
 	{
 		char *null;
