@@ -45,6 +45,6 @@ char *str_concat(char *s1, char *s2)
 		concatenar[pasar2] = s2[pasar];
 		pasar++;
 	}
-	concatenar[total_bytes] = '\0';
+	concatenar[bytes1 + bytes2] = '\0';
 	return (concatenar);
 }
