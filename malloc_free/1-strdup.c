@@ -14,6 +14,11 @@ char *_strdup(char *str)
 	int bytes = 0;
 	int contador = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (str[bytes])
 	{
 		bytes++;
@@ -21,17 +26,11 @@ char *_strdup(char *str)
 
 	deposito = malloc(sizeof(char) * (bytes + 1));
 
-	if (deposito == NULL)
-	{
-		return (NULL);
-	}
-
 	while (contador <= bytes)
 	{
 		deposito[contador] = str[contador];
-		deposito++;
+		contador++;
 	}
 
-	free(str);
 	return (deposito);
 }
