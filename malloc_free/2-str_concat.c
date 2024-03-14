@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		concatenar[pasar] = s1[pasar];
 	}
 	pasar = 0;
-	for (pasar2 = bytes1; pasar2 < total_bytes; pasar2++)
+	for (pasar2 = bytes1; pasar2 < (bytes1 + bytes2); pasar2++)
 	{
 		concatenar[pasar2] = s2[pasar];
 		pasar++;
