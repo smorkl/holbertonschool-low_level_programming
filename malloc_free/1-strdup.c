@@ -19,17 +19,19 @@ char *_strdup(char *str)
 		bytes++;
 	}
 
-	deposito = malloc(sizeof(char) * bytes);
+	deposito = malloc(sizeof(char) * (bytes + 1));
 
 	if (deposito == NULL)
 	{
 		return (NULL);
 	}
 
-	while (contador < bytes)
+	while (contador <= bytes)
 	{
 		deposito[contador] = str[contador];
+		deposito++;
 	}
 
+	free(deposito);
 	return (deposito);
 }
