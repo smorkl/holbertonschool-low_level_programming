@@ -32,6 +32,6 @@ char *_strdup(char *str)
 		deposito++;
 	}
 
-	free(deposito);
+	free(str);
 	return (deposito);
 }
