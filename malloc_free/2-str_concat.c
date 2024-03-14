@@ -13,6 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int total_bytes;
 	char *concatenar;
 	int pasar;
+	int pasar2;
 
 	while (s1[bytes1])
 	{
@@ -41,9 +42,9 @@ char *str_concat(char *s1, char *s2)
 		concatenar[pasar] = s1[pasar];
 	}
 	pasar = 0;
-	for (bytes1; bytes1 < total_bytes; bytes1++)
+	for (pasar2 = bytes1; pasar2 < total_bytes; pasar2++)
 	{
-		concatenar[bytes1] = s2[pasar];
+		concatenar[pasar2] = s2[pasar];
 		pasar++;
 	}
 	concatenar[total_bytes] = '\0';
