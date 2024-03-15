@@ -6,6 +6,9 @@
  *              and the array of integers starts at 0.
  * @width: the width of array.
  * @height: the height of array.
+ *
+ * Return: if width and height <= 0, return NULL,
+ *         or return a pointer to a 2-dimensional array.
  */
 
 int **alloc_grid(int width, int height)
