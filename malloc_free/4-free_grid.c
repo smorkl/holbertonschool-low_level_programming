@@ -4,7 +4,7 @@
 /**
  * free_grid - the fuction free the array of 2-dimensional.
  *
- * @giid: the 2-dimensional array.
+ * @grid: the 2-dimensional array.
  * @height: the height of grid.
  */
 
