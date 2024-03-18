@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - This function prints the character in quantity \.
+ * print_diagonal - This function that draws a diagonal line on the terminal
  * @n: number
  *
  */
@@ -14,15 +14,13 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 		return;
-    }
-	while (contador < n)
-	{
-		int espacio = 0;
+	}
 
-		while (contador < espacio)
+	for (contador = 0; contador < n; espacio++)
+	{
+		for (espacio = 0; espacio < contador; espacio++)
 		{
 			_putchar(' ');
-			espacio++;
 		}
 
 		_putchar('\\');
