@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int señal = 1;
+	int sign = 1;
 	unsigned int num = 0;
 
 	while (*s == ' ')
@@ -33,5 +33,5 @@ int _atoi(char *s)
 		s++;
 	}
 
-	return (num * señal)
+	return (num * sign)
 }
