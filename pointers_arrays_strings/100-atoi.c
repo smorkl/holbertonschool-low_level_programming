@@ -19,7 +19,7 @@ int _atoi(char *s)
 
 	if (*s == '-')
 	{
-		señal = -1;
+		sign = -1;
 		s++,
 	}
 	else if (*s == '+')
