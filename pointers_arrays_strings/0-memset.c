@@ -7,15 +7,17 @@
  * @b: the char that will fill the spaces
  * @n: number of spaces to fill
  *
+ * Return: pointer wint char
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int re = 0;
+	unsigned int re = 0;
 
 	while (re < n)
 	{
 		s[re] = b;
 		re++;
 	}
+	return (s);
 }
