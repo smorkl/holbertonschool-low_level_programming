@@ -9,7 +9,7 @@
  * Return: a pointer of the string concatenates
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int contador_dest = 0;
 	int contador_src = 0;
