@@ -18,7 +18,7 @@ char *cap_string(char *ptr)
 		}
 		else
 		{
-			ptr[leng] = ptr[leng]
+			ptr[leng] = ptr[leng];
 		}
 		leng++;
 	}
