@@ -1,15 +1,15 @@
-#incliude "main.h"
+#include "main.h"
 
 /**
  * _strcat - the fuction concatenates two strings but two string
  *           use n bytes
  * @dest: one string
  * @src: two string
- *
+ * @n: number of bytes
  * Return: a pointer of the string concatenates
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 	int contador_dest = 0;
 	int contador;
