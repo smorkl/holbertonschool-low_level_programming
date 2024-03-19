@@ -10,7 +10,7 @@
 char *leet(char *p)
 {
 	int cont1 = 0, cont2;
-	char condiciones[8] = {'O', 'L', '+', 'E', 'A', '+', '+xs', 'T'};
+	char condiciones[8] = {'O', 'L', '+', 'E', 'A', '+', '+', 'T'};
 
 	while (p[cont1])
 	{
