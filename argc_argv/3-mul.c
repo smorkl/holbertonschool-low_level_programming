@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stlib.h>
 
 /**
  * main - the fuction print the multiply 2 numbers from the array.
@@ -25,5 +26,5 @@ int main(int argc, char *argv[])
 	resultado = num1 * num2;
 	printf("%d\n", resultado);
 
-	return (o);
+	return (0);
 }
