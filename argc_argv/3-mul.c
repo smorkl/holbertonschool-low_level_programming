@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 /**
  * main - the fuction print the multiply 2 numbers from the array.
