@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -14,9 +15,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int contador;
 	int num;
-	var_list args;
+	va_list args;
 
-	var_start (args, n);
+	va_start (args, n);
 	for (contador = 0; contador < n; contador++)
 	{
 		num = va_arg(args, int);
