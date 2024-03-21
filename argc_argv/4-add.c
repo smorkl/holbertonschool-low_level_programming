@@ -12,24 +12,27 @@
 int main(int argc, char *argv[])
 {
 	int resultado;
-	unsigned int num1, num2;
+	int repetir_suma, num;
 
-	if (argc < 3)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-
-	if (num1 <= 0 || num2 <= 0)
+	for (repetir_suma = 0; repetir_suma < argc; repetir_suma++)
 	{
-		printf("Error\n");
-		return (1);
+		num = atpi(argv[repetir_suma]);
+
+		if (num <= 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+
+		resultado += num;
 	}
 
-	resultado = num1 + num2;
 	printf("%d\n", resultado);
 
 	return (0);
