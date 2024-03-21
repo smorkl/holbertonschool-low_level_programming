@@ -4,7 +4,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	int resultado = 0;
-	int cconteo;
+	int conteo;
 	va_list args;
 
 	if (n == 0)
