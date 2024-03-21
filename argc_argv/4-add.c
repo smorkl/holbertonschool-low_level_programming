@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		num = atoi(argv[repetir_suma]);
 
-		if (num <= 0 || (num == 0 && *argv[i] != '0'))
+		if (num <= 0 || (num == 0 && *argv[repetir_suma] != '0'))
 		{
 			printf("Error\n");
 			return (1);
