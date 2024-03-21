@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%d", cont[contador]);
+			printf("%s", cont);
 		}
 
 		if (separator != NULL && contador != (n - 1))
