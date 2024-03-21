@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int contador;
 	char *cont;
 
-	va_start(arg, n);
+	va_start(cadenas, n);
 	for (contador = 0; contador < n; contador++)
 	{
 		cont = va_arg(cadenas, char *);
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%s", cont[0]);
+			printf("%d", cont[0]);
 		}
 
 		if (separator != NULL && contador != (n - 1))
@@ -35,5 +35,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end(args);
+	va_end(cadenas);
 }
