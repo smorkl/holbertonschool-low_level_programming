@@ -4,7 +4,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	int resultado = 0;
-	int conteo;
+	unsigned int conteo;
 	va_list args;
 
 	if (n == 0)
@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(args, n);
 	for (conteo = 0; conteo < n; conteo++)
 	{
-		resultado += va_args, int;
+		resultado += va_arg,unsigned int;
 	}
 	va_end(args);
 	return (resultado);
