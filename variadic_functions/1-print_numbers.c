@@ -5,9 +5,8 @@
 /**
  * print_numbers - The function prints the numbers separated by
  *                 a comma and a space followed by a new line.
- * @separador:number separator.
+ * @separator:number separator.
  * @n: the number of the int.
- *
  *
  */
 
