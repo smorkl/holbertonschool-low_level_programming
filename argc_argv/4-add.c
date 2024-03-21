@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	for (repetir_suma = 0; repetir_suma < argc; repetir_suma++)
 	{
-		num = atpi(argv[repetir_suma]);
+		num = atoi(argv[repetir_suma]);
 
 		if (num <= 0)
 		{
