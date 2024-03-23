@@ -24,7 +24,7 @@ void print_string(va_list arg)
 	char *str = va_arg(arg, char *);
 
 	if (str == NULL)
-	q{
+	{
 		printf("(nil)");
 	}
 	else
@@ -51,7 +51,7 @@ void print_all(const char * const format, ...)
 			printers[format[i] - 'c'](args);
 			separator = ", ";
 		}
-		i++
+		i++;
 	}
 	printf("\n");
 
