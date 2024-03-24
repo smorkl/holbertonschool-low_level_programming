@@ -12,6 +12,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int index;
+	char *filler;
 	void *ptr = NULL;
 
 	if (nmemb == 0 || size == 0)
