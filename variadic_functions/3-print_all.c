@@ -40,7 +40,7 @@ void print_string(va_list arg)
 		return;
 	}
 
-	printf("%s", str)
+	printf("%s", str);
 }
 
 void print_all(const char * const format, ...)
