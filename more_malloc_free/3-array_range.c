@@ -2,10 +2,12 @@
 #include "stdlib.h"
 
 /**
+ * array_range - The function sorts some integers in an
+ *                 array from minimum to maximum
+ * @min: int min
+ * @max: int max
  *
- *
- *
- *
+ * Return: pointer to an array.
  */
 
 int *array_range(int min, int max)
@@ -36,5 +38,5 @@ int *array_range(int min, int max)
 		ptr[leng] = min++;
 	}
 
-	retur (ptr);
+	return (ptr);
 }
