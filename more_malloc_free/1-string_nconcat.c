@@ -26,10 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (bytes = 0; s1[bytes]; bytes++)
 	{
-		lenscont2++;
+		lenscont++;
 	}
 
-	contenedor = malloc(sixeof(char) * (lenscont));
+	contenedor = malloc(sizeof(char) * (lenscont));
 
 	if (contenedor == NULL)
 	{
