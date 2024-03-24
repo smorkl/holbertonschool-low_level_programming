@@ -9,28 +9,38 @@ void print_string(va_list arg);
 
 void print_char(va_list arg)
 {
-	printf("%c", va_arg(arg, int));
+	char letter;
+
+	letter = va_arg(arg, int);
+	printf("%c", letter);
 }
 void print_int(va_list arg)
 {
-	printf("%d", va_arg(arg, int));
+	int num;
+
+	num = va_arg(arg, int);
+	printf("%d", num);
 }
 void print_float(va_list arg)
 {
-	printf("%f", va_arg(arg, double));
+	float num;
+
+	num = va_arg(arg, double);
+	printf("%f", num);
 }
 void print_string(va_list arg)
 {
-	char *str = va_arg(arg, char *);
+	char *str;
+
+	str = va_arg(arg, char *);
 
 	if (str == NULL)
 	{
 		printf("(nil)");
+		return;
 	}
-	else
-	{
-		printf("%s", str);
-	}
+
+	printf("%s", str)
 }
 
 void print_all(const char * const format, ...)
