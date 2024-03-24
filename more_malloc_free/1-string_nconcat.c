@@ -48,6 +48,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		contenedor[lenscont++] = s2[bytes];
 	}
 
-	contenedor[bytes] = '\0'
+	contenedor[bytes] = '\0';
 	return (contenedor);
 }
