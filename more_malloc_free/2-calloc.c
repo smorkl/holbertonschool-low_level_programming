@@ -20,37 +20,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	if (size == sizeof(char))
+	ptr = malloc(size * nmemb);
+
+	if (ptr = NULL)
 	{
-		char *arr;
-
-		arr = malloc(sizeof(char) * nmemb);
-
-		if (arr == NULL)
-		{
-			return (NULL);
-		}
-		ptr = arr;
-	}
-	else if (size == sizeof(int))
-	{
-		int *arr;
-
-		arr = malloc(sizeof(int) * nmemb);
-
-		if (arr == NULL)
-		{
-			return (NULL);
-		}
-		ptr = arr;
+		return(NULL);
 	}
 
-	filler = malloc(size * nmemb);
-	if (filler == NULL)
-	{
-		free(ptr);
-		return (NULL);
-	}
+	filler = ptr;
 
 	for (index = 0; index < (size * nmemb); index++)
 	{
