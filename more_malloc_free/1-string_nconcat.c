@@ -2,51 +2,51 @@
 #include "main.h"
 
 /**
- * create_array - the function create an array of char and
+ * string_nconcat - the function create an array of char and
  *                initializes it with a specific char
- * @size: array size
- * @c: specific char
- *
- * Return: return a pointer to the array.
+ * @s1: firts string
+ * @s2: second string
+ * @n: n bytes
+ * Return: return a pointer
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *contenedor;
-	int contador;
-	int contador2;
-	int pasar;
+	unsigned int lenscont = n, bytes;
 
-	while (s1[contador])
+	if (s1 == NULL)
 	{
-		contador++;
+		s1 = "";
 	}
-	while (s2[contador2])
-	{
-		contador2++;
-	}
-	if (n >= contador2)
-	{
-		contenedor = malloc(contador + contador2 + 1);
 
-		for (pasar = 0; pasar < contador;pasar++)
-		{
-			contenedor[pasar] = s1[pasar]
-		}
-
-		for (;contador < (contador + contador2); contador++)
-		{
-			contenedor [contador] = s2[pasar];
-		}
-		return (contenedor);
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
-	contenedor = malloc(contador + n + 1);
+
+	for (bytes = 0; s1[bytes]; bytes++)
+	{
+		lenscont2++;
+	}
+
+	contenedor = malloc(sixeof(char) * (lenscont));
 
 	if (contenedor == NULL)
 	{
 		return (NULL);
 	}
 
+	lenscont = 0;
 
+	for (bytes = 0; s1[bytes]; bytes++)
+	{
+		contenedor[lenscont++] = s1[bytes];
+	}
 
+	for (bytes = 0; s2[bytes] && bytes < n; bytes++)
+	{
+		contenedor[lenscont++] = s2[bytes];
+	}
+
+	return (contenedor);
 }
