@@ -28,7 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		{
 			return (NULL);
 		}
-		ptr = arr
+		ptr = arr;
 	}
 	else if (size == sizeof(int))
 	{
