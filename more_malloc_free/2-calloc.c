@@ -45,6 +45,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		ptr = arr;
 	}
 
+	filler = malloc(size * nmemb);
+	if (filler == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+
 	for (index = 0; index < (size * nmemb); index++)
 	{
 		filler[index] = '\0';
