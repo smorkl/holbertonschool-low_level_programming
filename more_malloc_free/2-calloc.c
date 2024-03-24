@@ -11,6 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int index;
 	void *ptr = NULL;
 
 	if (nmemb == 0 || size == 0)
@@ -41,6 +42,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			return (NULL);
 		}
 		ptr = arr;
+	}
+
+	for (index = 0; index < (size * nmemb); index++)
+	{
+		filler[index] = '\0';
 	}
 
 	return (ptr);
