@@ -12,11 +12,11 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	while (s*)
+	while (*s)
 	{
 		char *temp;
 
-		*temp = accept;
+		temp = accept;
 
 		while (*temp)
 		{
