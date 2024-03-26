@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * _strpbrk - The function searches any string
-              from an array of bytes and stops when
-			  finds the first ocurrence.
+ * _strpbrk - The function searches any string from an array
+ *              of bytes and stops when finds the first ocurrence.
  * @s: the string of the char.
  * @accept: the bytes to be searched.
  *
