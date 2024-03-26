@@ -12,19 +12,21 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int pasar = 0;
-
-	while (s[pasar])
+	while (s*)
 	{
-		for (i = 0; accept[i]; i++)
+		char *temp;
+
+		*temp = accept;
+
+		while (*temp)
 		{
-			if (s[pasar] == accept[i])
+			if (*s == *temp)
 			{
 				return (s);
 			}
+			temp++;
 		}
-		pasar++;
+		s++;
 	}
 	return ('\0');
 }
