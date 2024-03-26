@@ -7,6 +7,7 @@
  * @s: the string of the char.
  * @accept: the char string to find
  *
+ * Return: number of times a char was found.
  */
 
 
