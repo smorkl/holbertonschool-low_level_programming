@@ -5,20 +5,20 @@
  * @s:
  * @c:
  *
+ * Return:
  */
 
 char *_strchr(char *s, char c)
 {
 	int re = 0;
-	char *s2;
 
 	while (s[re])
 	{
 		if (s[re] == c)
 		{
-			return (s2);
+			return (s + re);
 		}
-		s2[re] = s[re];
 		re++;
 	}
+	return ('\0');
 }
