@@ -7,6 +7,7 @@
  * @s: the string of the char.
  * @accept: the bytes to be searched.
  *
+ * Return: returns the byte found or null if it was not found
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -25,5 +26,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		pasar++;
 	}
-	return ('\0');
+	return (NULL);
 }
