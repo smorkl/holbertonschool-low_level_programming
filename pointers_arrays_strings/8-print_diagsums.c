@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_diagsums - The function adds 2 diagonals of a square matrix and prints.
+ * print_diagsums - The function adds 2 diagonals of
+ *                   a square matrix and prints.
  * @a: the pointer to a matrix.
  * @size: the matrix size.
  *
