@@ -1,4 +1,4 @@
-xc#include "function_pointers"
+#include "function_pointers"
 
 /**
  * array_iterator - the function executes a function given
