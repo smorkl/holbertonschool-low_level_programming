@@ -10,20 +10,15 @@
  * Return: The pointer to dest.
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, const char *src)
 {
-	int pasadas = 0;
-	int contador = 0;
+	int index = 0;
 
-	while (src[contador] != '\0')
+	while (src[index])
 	{
-		contador++;
+		dest[index] = src[index];
+		index++;
 	}
 
-	while (pasadas <= contador)
-	{
-		dest[pasadas] = src[pasadas];
-		pasadas++;
-	}
 	return (dest);
 }
