@@ -1,4 +1,4 @@
-#incluce "fuction_pointers.h"
+#include "fuction_pointers.h"
 
 /**
  * int_index -
