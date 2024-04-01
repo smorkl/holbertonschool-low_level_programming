@@ -1,12 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
 
-/**
- * _strlen - prototype of len.
- * _strcopy - prototype of copy.
- * _new_dog - prototype create new struture dog.
- */
-
 int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
@@ -14,6 +8,8 @@ dog_t *new_dog(char *name, float age, char *owner);
 /**
  * _strlen - the fuction return length of the string.
  * @str: the string.
+ *
+ * Return: length of the string.
  */
 
 int _strlen(char *str)
