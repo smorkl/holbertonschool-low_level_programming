@@ -1,1 +1,1 @@
-In these functions I put double pointers into practice
+C - Pointers, arrays and strings
