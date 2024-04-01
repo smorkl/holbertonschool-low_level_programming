@@ -1,0 +1,14 @@
+#include "main.h"
+
+void (*f)(char *);
+
+void (*f)(char *)
+{
+
+}
+
+
+void print_name(char *name, void (*f)(char *))
+{
+
+}
