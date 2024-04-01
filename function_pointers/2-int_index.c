@@ -1,4 +1,4 @@
-#inluce "fuction_pointers.h"
+#incluce "fuction_pointers.h"
 
 /**
  * int_index -
