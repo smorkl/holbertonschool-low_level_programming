@@ -1,5 +1,6 @@
 #include "lists.h"
-#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * add_node - the fucntion add a node in lists_s.
@@ -21,7 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	if (dup == NULL)
+	if (duplicar == NULL)
 	{
 		free(new);
 		return (NULL);
