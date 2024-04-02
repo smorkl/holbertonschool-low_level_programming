@@ -12,7 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	char *duplicar = strdup(str);
+	char *duplicar;
 	int len;
 	list_t *new;
 
@@ -22,6 +22,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
+	duplicar = strdup(str);
 	if (duplicar == NULL)
 	{
 		free(new);
