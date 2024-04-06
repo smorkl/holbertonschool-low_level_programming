@@ -3,7 +3,8 @@
 
 /**
  * add_node_end - the fuction add a new nodo at the end of the list
- * @str: a pointer the head.
+ * @str: the pointr to the new string .
+ * @head: a pointer to the head of list.
  *
  * Return: if the fuction fails = NULL or retur
  *         a pointer to the new nodo.
@@ -18,16 +19,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-
 	dup = strdup(str);
 	if (str == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
-
 	for (len = 0; str[len];)
 	{
 		len++;
@@ -42,14 +41,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 	}
 	else
-	{
 		last = *head;
 		while (last->next != NULL)
 		{
 			last = last->next;
 		}
 		last->next = new;
-	}
-
 	return (*head);
 }
