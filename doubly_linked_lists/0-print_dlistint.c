@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_dlistint - the fuction print all the element.
