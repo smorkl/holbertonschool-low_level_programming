@@ -26,6 +26,11 @@ char *_strdup(char *str)
 
 	deposito = malloc(sizeof(char) * (bytes + 1));
 
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
+
 	while (contador <= bytes)
 	{
 		deposito[contador] = str[contador];
