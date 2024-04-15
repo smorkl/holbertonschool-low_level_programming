@@ -23,6 +23,7 @@ char *str_concat(char *s1, char *s2)
 		bytes2++;
 	}
 	concatenar = malloc(sizeof(char) + (bytes1 + bytes2 + 1));
+
 	if (concatenar == NULL)
 	{
 		char *null;
@@ -33,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 			return (NULL);
 		}
 		null[0] = '\0';
-		return (null);
+		return (NULL);
 	}
 	for (pasar = 0; pasar < bytes1; pasar++)
 	{
