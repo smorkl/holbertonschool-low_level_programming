@@ -11,29 +11,23 @@
 
 int main(int argc, char *argv[])
 {
-	int resultado;
-	int repetir_suma, num;
+	int num, digit, sum = 0;
 
-	if (argc < 2)
+	for (num = 1; num < argc; num++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (repetir_suma = 0; repetir_suma < argc; repetir_suma++)
-	{
-		num = atoi(argv[repetir_suma]);
-
-		if (num <= 0 || (num == 0 && *argv[repetir_suma] != '0'))
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 
-		resultado += num;
+		sum += atoi(argv[num]);
 	}
 
-	printf("%d\n", resultado);
+	printf("%d\n", sum);
 
 	return (0);
 }
