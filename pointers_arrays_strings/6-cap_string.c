@@ -2,7 +2,7 @@
 
 /**
  * cap_string - the fuction convert a string from lowercase to uppercase
- * @ptr: the string
+ * @str: the string
  * Return: pointer with capital letters
  */
 
