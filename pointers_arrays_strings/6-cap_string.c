@@ -6,21 +6,33 @@
  * Return: pointer with capital letters
  */
 
-char *cap_string(char *ptr)
+char *cap_string(char *str)
 {
-	int leng = 0;
+	int index = 0;
 
-	while (ptr[leng])
+	while (str[index])
 	{
-		if (ptr[leng] >= 'a' && ptr[leng] <= 'z')
-		{
-			ptr[leng] = (ptr[leng] - 32);
-		}
-		else
-		{
-			ptr[leng] = ptr[leng];
-		}
-		leng++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (ptr);
+
+	return (str);
 }
