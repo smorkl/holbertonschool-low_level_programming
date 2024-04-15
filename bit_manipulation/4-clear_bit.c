@@ -10,10 +10,12 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-    if (index >= (sizeof(unsigned long int) * 8)) /* Check if index is out of bounds */
-        return -1;
+	if (index >= (sizeof(unsigned long int) * 8))
+	{
+		return -1;
+	}
 
-    *n &= ~(1UL << index); /* Clear the bit at the given index */
+	*n &= ~(1UL << index);
 
-    return 1;
+	return 1;
 }
