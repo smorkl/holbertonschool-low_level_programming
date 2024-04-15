@@ -6,46 +6,31 @@
  * @s2: string 2.
  * Return: concatenated pointer address
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	int bytes1 = 0;
-	int bytes2 = 0;
-	char *concatenar;
-	int pasar;
-	int pasar2;
+	char *concat_str;
+	int index, concat_index = 0, len = 0;
 
-	while (s1[bytes1])
-	{
-		bytes1++;
-	}
-	while (s2[bytes2])
-	{
-		bytes2++;
-	}
-	concatenar = malloc(sizeof(char) + (bytes1 + bytes2 + 1));
+	if (s1 == NULL)
+		s1 = "";
 
-	if (concatenar == NULL)
-	{
-		char *null;
+	if (s2 == NULL)
+		s2 = "";
 
-		null = malloc(1);
-		if (null == NULL)
-		{
-			return (NULL);
-		}
-		null[0] = '\0';
+	for (index = 0; s1[index] || s2[index]; index++)
+		len++;
+
+	concat_str = malloc(sizeof(char) * len);
+
+	if (concat_str == NULL)
 		return (NULL);
-	}
-	for (pasar = 0; pasar < bytes1; pasar++)
-	{
-		concatenar[pasar] = s1[pasar];
-	}
-	pasar = 0;
-	for (pasar2 = bytes1; pasar2 < (bytes1 + bytes2); pasar2++)
-	{
-		concatenar[pasar2] = s2[pasar];
-		pasar++;
-	}
-	concatenar[bytes1 + bytes2] = '\0';
-	return (concatenar);
+
+	for (index = 0; s1[index]; index++)
+		concat_str[concat_index++] = s1[index];
+
+	for (index = 0; s2[index]; index++)
+		concat_str[concat_index++] = s2[index];
+
+	return (concat_str);
 }
