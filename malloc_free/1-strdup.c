@@ -26,7 +26,7 @@ char *_strdup(char *str)
 
 	deposito = malloc(sizeof(char) * (bytes + 1));
 
-	if (duplicate == NULL)
+	if (deposito == NULL)
 	{
 		return (NULL);
 	}
