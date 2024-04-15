@@ -16,9 +16,9 @@ char *create_array(unsigned int size, char c)
 	unsigned int contador;
 
 	if (size == 0)
-	{
-		return (NULL);
-   	}
+		{
+			return (NULL);
+		}
 
 	str = malloc(size * sizeof(char));
 
