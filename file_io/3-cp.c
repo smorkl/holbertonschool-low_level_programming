@@ -1,6 +1,8 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include "main.h"
 
 char *create_buffer(void);
 void close_files(int from, int to);
