@@ -32,7 +32,7 @@ void error_file(int file_from, int file_to, char *argv[]) {
 int main(int argc, char *argv[]) {
     int file_from, file_to;
     ssize_t lenchar, wrf;
-    char buf[1024]; // Buffer size for reading/writing
+    char buf[1024];
 
     if (argc != 3) {
         dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
