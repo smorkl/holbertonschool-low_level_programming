@@ -32,7 +32,7 @@ void error_file(int file_from, int file_to, char *argv[]) {
 int main(int argc, char *argv[]) {
     int file_from, file_to;
     ssize_t lenchar, wrf;
-    char buf[1024]; // Buffer size for reading/writing
+    char buf[1024];
 
     if (argc != 3) {
         dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
@@ -43,27 +43,26 @@ int main(int argc, char *argv[]) {
     file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
     error_file(file_from, file_to, argv);
 
-    // Read and write file contents
-    while ((lenchar = read(file_from, buf, sizeof(buf))) > 0) {
+	while ((lenchar = read(file_from, buf, sizeof(buf))) > 0) {
         if ((wrf = write(file_to, buf, lenchar)) != lenchar) {
             dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
             exit(99);
         }
     }
 
-    // Error handling for read/write errors
-    if (lenchar == -1) {
+	if (lenchar == -1) {
         dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
         exit(98);
     }
 
-    // Close file descriptors
     if (close(file_from) == -1) {
-        dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", file_from);
+        dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n",
+				file_from);
         exit(100);
     }
     if (close(file_to) == -1) {
-        dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n", file_to);
+        dprintf(STDERR_FILENO, "Error: Can't close file descriptor %d\n",
+				file_to);
         exit(100);
     }
 
